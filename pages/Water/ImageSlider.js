@@ -69,7 +69,7 @@ function ImageSlider(){
         <SwiperSlide>
           <div className="third-container" data-swiper-parallax="-300">
            <div className="sub3" data-swiper-parallax="-300">
-           ለአእምሮ ሹልነት እርጥበት
+           ለአእምሮ ደህንነት እርጥበት
           </div>
           <hr className="line" data-swiper-parallax="-500"></hr>
           <div className="text" data-swiper-parallax="-100">

@@ -7,7 +7,14 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+	
     
+}
+
+.page_body
+{
+	background-color:rgb(167, 212, 252);
+
 }
 .homeagetext{
 position: absolute;
@@ -22,11 +29,12 @@ font-size: 30px;
 }
 .homeage
 {
+	
     width: 400px;
     height: 600px;
     display:flex;
     position: relative;
-background-color: rgb(255, 255, 255);
+
 
 }
 .homeage:hover
@@ -508,7 +516,7 @@ div.drop-container {
   }
   
   .bloodgroupo {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 7, 7);
     
     position: relative;
 display: flex;
@@ -546,7 +554,7 @@ display: flex;
     width: 75%;
     height: 75%;
 	
-    border: 5px solid rgb(255, 0, 0);
+   
     animation: dripple 2s ease-out infinite;
   }
   
