@@ -1,0 +1,64 @@
+/*
+* ######### STYLES SHARED BY ALL PAGES #########
+*/
+
+.food_wrapper, 
+.age_wrapper, 
+.home_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_body{
+    min-height: calc(100vh - (var(--header-height) + 2px));
+    width: calc(100% - (var(--sidebar-mini-width) + 2px));
+    margin-top: calc(var(--header-height) + 2px);
+    margin-left: auto;
+    position: relative;
+}
+.page_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.45);
+    backdrop-filter: blur(3px);
+    z-index: 999;
+    display: none;
+}
+.page_overlay.active{
+    display: block;
+}
+
+
+.mobile_page_title{
+    padding: 1rem;
+    display: none;
+}
+.mobile_page_title .title,
+.sub_title{
+    margin: auto;
+    font-weight: thin;
+    font-size: 1.5em;
+    color: transparent;
+    width: fit-content;
+    background: linear-gradient(45deg, var(--clr-primary-hovr), rgba(5, 221, 250, 0.959));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/** MEDIA QUERIES **/
+@media only screen and (max-width: 600px){
+    .page_body{
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .mobile_page_title{
+        display: block;
+    }
+}
