@@ -12,6 +12,7 @@
 .homeagetext{
 position: absolute;
 padding-top: 40%;
+font-size: 30px;
 }
 .homecontener{
 	display: flex;
@@ -32,11 +33,11 @@ background-color: rgb(255, 255, 255);
 {
 
     border-right: 5px solid rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 0, 0); ;
 
 }
 .homeblood
 {
+	font-size: 25px;
     width: 400px;
     height: 600px;
     display: flex;
@@ -51,12 +52,12 @@ background-color: rgb(255, 255, 255);
 {
     
     border-right: 5px solid rgb(255, 0, 0);
-    border-bottom: 5px solid rgb(255, 0, 0); 
 
 }
 .homewater
 {
     width: 400px;
+	font-size: 20px;
     height: 600px;
    display:flex;
    flex-wrap: wrap;
@@ -69,56 +70,9 @@ background-color: rgb(255, 255, 255);
 .homewater:hover
 {
     border-right: 5px solid aqua;
-    border-bottom: 5px solid aqua; ;
   
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .book,
 .book__pg-shadow,
