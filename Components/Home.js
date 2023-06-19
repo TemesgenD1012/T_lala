@@ -4,6 +4,7 @@ import homestyle from './homestyle.css';
 function Home() {
   return (
     <div className='page_body' >
+      
     <div className='homecontener'>
         <div className='homeage'>
 
