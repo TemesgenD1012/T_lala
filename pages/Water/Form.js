@@ -33,9 +33,6 @@ if(height!='' && !isNaN(height))
       const bmi = weight / computed;
       setBmi(bmi.toFixed(2))
 }
-
-
-
      
    } };
 
@@ -56,26 +53,38 @@ if(height!='' && !isNaN(height))
     >
       <div id="fields">
       <TextField 
-      onInput = {(e) =>{ 
-        e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,3) 
+      value={weight} 
+      type='number' 
+      onChange={handleChange} 
+      id="outlined-basic"  
+      label="Weight in Kg" 
+      variant="outlined"
+      required={true}
+      onInput = {(e) =>{
+        e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,3)
     }}
-      
-      value={weight}
-       onChange={handleChange}
-        id="outlined-basic"  
-        label="Weight in Kg" 
-        variant="outlined"/>
+      />
+
       
       
       
-      <TextField value={height} onChange={Handlechange}  id="filled-height" label="Height in cm" variant="outlined" />
+      <TextField 
+      value={height} 
+      type='number' 
+      inputProps={{maxLength: 3}} 
+      onChange={Handlechange}  
+      id="filled-height" 
+      label="Height in cm" 
+      variant="outlined" 
+      required={true}
+      />
       </div>
       
       
       <Button id="btn" variant="contained" type='button' onClick={calculateWaterIntake}>calculate</Button>
       {waterIntake && (
         <p id='resultpar'>
-          የእርስዎ የሚመከረው ዕለታዊ የውሃ  <strong>{waterIntake} ሊትር</strong> ወይም <strong>{Math.round(waterIntake*4.227)}</strong> ኩባያዎች. እና የሰውነትዎ ብዛት መረጃ ጠቋሚ ነው። <strong>{bmi}</strong>.
+          የእርስዎ የሚመከረው ዕለታዊ ውሃ ነው። <strong>{waterIntake} liters</strong> or <strong>{Math.round(waterIntake*4.227)}</strong> cups. And your body mass index is <strong>{bmi}</strong>.
         </p>
       )}
 

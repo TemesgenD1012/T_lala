@@ -44,19 +44,17 @@ function ImageSlider(){
 <SwiperSlide>
           <div className="first-container">
           <div className="sub1" data-swiper-parallax="-300">
-          እርጥበትን የመጠበቅ አስፈላጊነት
-          </div>
+          እርጥበትን የመጠበቅ አስፈላጊነት          </div>
           <hr className="line" data-swiper-parallax="-500"></hr>
           <div className="text" data-swiper-parallax="-100">
-          <p>በእርጥበት መቆየት ለአጠቃላይ ጤንነታችን እና ደህንነታችን እጅግ በጣም አስፈላጊ ነው። በቂ ውሃ ማጠጣት ሰውነታችን በትክክል እንዲሠራ እና ትክክለኛውን የፈሳሽ ሚዛን እንዲጠብቅ ያደርጋል. በየቀኑ በቂ መጠን ያለው ውሃ በመጠጣት፣ የሰውነት ሙቀትን መቆጣጠር፣ የምግብ መፈጨትን እና የተመጣጠነ ምግብን ለመምጥ እና ቆሻሻን ለማስወገድ የመሳሰሉ አስፈላጊ የሰውነት ተግባራትን ይደግፋሉ። ትክክለኛ የውሃ ማጠጣት የሀይላችንን ደረጃ ከፍ ያደርገዋል፣የግንዛቤ ስራን ያሻሽላል እና የተሻለ የአካል ብቃት እንቅስቃሴን ያበረታታል። እንዲሁም ለቆዳ ጤናማ አስተዋጽኦ ያደርጋል፣ የምግብ መፈጨትን ጤንነት ይደግፋል፣ የኩላሊት ስራን ይጠብቃል እና ክብደትን ለመቆጣጠር ይረዳል። ለሀይድሮሽን ቅድሚያ በመስጠት አጠቃላይ ጤናን ማዳበር እና የሰውነታችን ስርአቶች ትክክለኛ ስራን ማረጋገጥ እንችላለን።</p>          </div>
+          <p>በእርጥበት መቆየት ለአጠቃላይ ጤንነታችን እና ደህንነታችን እጅግ በጣም አስፈላጊ ነው። በቂ ውሃ ማጠጣት ሰውነታችን በተመቻቸ ሁኔታ እንዲሠራ እና ትክክለኛውን ፈሳሽ እንዲጠብቅ ያደርጋል. በየቀኑ በቂ መጠን ያለው ውሃ በመጠጣት፣ የሰውነት ሙቀትን መቆጣጠር፣ የምግብ መፈጨትን እና የተመጣጠነ ምግብን ለመምጥ እና ቆሻሻን ለማስወገድ የመሳሰሉ አስፈላጊ የሰውነት ተግባራትን ይደግፋሉ። ትክክለኛ የውሃ ማጠጣት የሀይላችንን ደረጃ ከፍ ያደርገዋል፣የግንዛቤ ስራን ያሻሽላል እና የተሻለ የአካል ብቃት እንቅስቃሴን ያበረታታል። እንዲሁም ለቆዳ ጤናማ አስተዋጽኦ ያደርጋል፣ የምግብ መፈጨትን ጤንነት ይደግፋል፣ የኩላሊት ስራን ይጠብቃል እና ክብደትን ለመቆጣጠር ይረዳል። ለሀይድሮሽን ቅድሚያ በመስጠት አጠቃላይ ጤናን ማዳበር እና የሰውነታችን ስርአቶች ትክክለኛ ስራን ማረጋገጥ እንችላለን።</p>          </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="second-container" data-swiper-parallax="-300">
             <div className="sub2" data-swiper-parallax="-300">
-            የሃይድሬሽን ኃይል
-          </div>
+            የሃይድሬሽን ኃይል          </div>
           <hr className="line" data-swiper-parallax="-500"></hr>
           <div className="text" data-swiper-parallax="-100">
             <p>
@@ -69,8 +67,7 @@ function ImageSlider(){
         <SwiperSlide>
           <div className="third-container" data-swiper-parallax="-300">
            <div className="sub3" data-swiper-parallax="-300">
-           ለአእምሮ ደህንነት እርጥበት
-          </div>
+           ለአእምሮ ደህንነት እርጥበት          </div>
           <hr className="line" data-swiper-parallax="-500"></hr>
           <div className="text" data-swiper-parallax="-100">
             <p>
@@ -82,8 +79,7 @@ function ImageSlider(){
         <SwiperSlide>
           <div className="fourth-container" data-swiper-parallax="-300">
             <div className="sub4" data-swiper-parallax="-300">
-            አስፈላጊው ኤሊሲር
-          </div>
+            አስፈላጊው ኤሊሲር          </div>
           <hr className="line" data-swiper-parallax="-500"></hr>
           <div className="text" data-swiper-parallax="-100">
             <p>

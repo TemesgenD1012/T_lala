@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import { scroller } from 'react-scroll';
 import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 // import dayjs from 'dayjs';
+import '../styles.css'
 import './agestyle.css'
 // import { getValue } from '@testing-library/user-event/dist/utils';
 
