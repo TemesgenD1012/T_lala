@@ -57,7 +57,7 @@ if(height!='' && !isNaN(height))
       type='number' 
       onChange={handleChange} 
       id="outlined-basic"  
-      label="Weight in Kg" 
+      label="Weight in Kg eg 75" 
       variant="outlined"
       required={true}
       onInput = {(e) =>{
@@ -74,7 +74,7 @@ if(height!='' && !isNaN(height))
       inputProps={{maxLength: 3}} 
       onChange={Handlechange}  
       id="filled-height" 
-      label="Height in cm" 
+      label="Height in M eg 1.80" 
       variant="outlined" 
       required={true}
       />
