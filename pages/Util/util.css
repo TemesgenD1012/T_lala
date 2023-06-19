@@ -2,35 +2,38 @@
 * ######### STYLES SHARED BY ALL PAGES #########
 */
 
- 
 
-.page_body{
+
+.page_body {
     min-height: calc(100vh - (var(--header-height) + 2px));
     width: calc(100% - (var(--sidebar-mini-width) + 2px));
     margin-top: calc(var(--header-height) + 2px);
     margin-left: auto;
     position: relative;
 }
-.page_overlay{
+
+.page_overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.45);
+    background-color: rgba(0, 0, 0, .45);
     backdrop-filter: blur(3px);
     z-index: 999;
     display: none;
 }
-.page_overlay.active{
+
+.page_overlay.active {
     display: block;
 }
 
 
-.mobile_page_title{
+.mobile_page_title {
     padding: 1rem;
     display: none;
 }
+
 .mobile_page_title .title,
 .sub_title {
     margin: auto;
@@ -42,7 +45,8 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
-.mobile_page_title.food{
+
+.mobile_page_title.food {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -51,22 +55,24 @@
 }
 
 /** MEDIA QUERIES **/
-@media only screen and (max-width: 600px){
-    .page_body{
+@media only screen and (max-width: 600px) {
+    .page_body {
         width: 100%;
         padding: 1rem;
     }
-    .page_body.food_wrapper{
+
+    .page_body.food_wrapper {
         padding: 0 !important;
     }
 
 }
 
-@media only screen and (max-width: 400px){
-    .mobile_page_title{
+@media only screen and (max-width: 400px) {
+    .mobile_page_title {
         display: block;
     }
-    .mobile_page_title.food .title{
+
+    .mobile_page_title.food .title {
         white-space: nowrap;
     }
 }

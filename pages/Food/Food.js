@@ -1,90 +1,90 @@
-import React, {useState} from 'react'
-import {useLocation} from 'react-router-dom'
-import {findTitle} from '../../Components/Header'
-import Info from './Info'
-import Table from './Table'
-import FoodImg from '../Assets/BloodFood.jpg'
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import './style.css'
-import '../../Components/style.css'
-
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { findTitle } from "../../Components/Header";
+import Info from "./Info";
+import Table from "./Table";
+import FoodImg from "../Assets/BloodFood.jpg";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import "./style.css";
+import "../../Components/style.css";
 
 function Food() {
-  const [blood, setBlood] = useState('');
+  const [blood, setBlood] = useState("");
   const location = useLocation();
   const currentUrl = location.pathname;
- 
-  function handleChange(val){
-    setBlood(val)  
+
+  function handleChange(val) {
+    setBlood(val);
   }
-  
+
   const style = {
     "& .MuiOutlinedInput-root": {
       "&.Mui-focused fieldset": {
-        borderColor: 'var(--clr-secondary)'  
-      }
+        borderColor: "var(--clr-secondary)",
+      },
     },
     "& #demo-simple-select-label": {
-      color: 'var(--clr-primary)'
+      color: "var(--clr-primary)",
     },
     "& #demo-simple-select": {
-      backgroundColor: 'rgba(236, 240, 236, .95)'
-    }
-  }   
+      backgroundColor: "rgba(236, 240, 236, .95)",
+    },
+  };
 
   return (
-    <div className='page_body food_wrapper'>
-      <div className='food_header'>
-        <div className='mobile_page_title food'>
-          <h2 className='title'>{findTitle(currentUrl)}</h2>
+    <div className="page_body food_wrapper">
+      <div className="food_header">
+        <div className="mobile_page_title food">
+          <h2 className="title">{findTitle(currentUrl)}</h2>
         </div>
-        <img src={FoodImg} alt='Food and blood type' className='food_image' />
-        <div className='select_wrapper'>
-          <div className='select_title'>
+        <img src={FoodImg} alt="Food and blood type" className="food_image" />
+        <div className="select_wrapper">
+          <div className="select_title">
             <p>Please select your blood type</p>
           </div>
-          <Box sx={[style, {minWidth: 'fit-content'}]}>
+          <Box sx={[style, { minWidth: "fit-content" }]}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label" >Blood Group</InputLabel>
+              <InputLabel id="demo-simple-select-label">Blood Group</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={blood}
                 label="Blood Group"
-                onChange={(e) => handleChange(e.target.value)} 
+                onChange={(e) => handleChange(e.target.value)}
                 MenuProps={{
                   disableScrollLock: true,
                 }}
               >
-                <MenuItem value={'A'}>A</MenuItem>
-                <MenuItem value={'B'}>B</MenuItem>
-                <MenuItem value={'O'}>O</MenuItem>
-                <MenuItem value={'AB'}>AB</MenuItem>
+                <MenuItem value={"A"}>A</MenuItem>
+                <MenuItem value={"B"}>B</MenuItem>
+                <MenuItem value={"O"}>O</MenuItem>
+                <MenuItem value={"AB"}>AB</MenuItem>
               </Select>
             </FormControl>
           </Box>
         </div>
       </div>
-      <div className='food_body' >
+      <div className="food_body">
         <Info />
-        <div className='recommendation_result'>
-          <div className='table_wrapper'>
-            {
-              (blood !== '') ? 
-              <p className='result_label'>Food results for blood type <code>{blood}</code></p>
-              :
+        <div className="recommendation_result">
+          <div className="table_wrapper">
+            {blood !== "" ? (
+              <p className="result_label">
+                Food results for blood type <code>{blood}</code>
+              </p>
+            ) : (
               <></>
-            }
+            )}
             <Table bloodType={blood} />
           </div>
-        </div> 
-      </div> 
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Food
+export default Food;

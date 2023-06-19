@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: 0;
     scroll-behavior: smooth;
     font-family: Dosis;
 }
-.age_page_body{
+
+.age_page_body {
     background-image: url(../Assets/wavebg.jpg);
     -webkit-background-size: cover;
     background-size: cover;
@@ -15,7 +16,7 @@
 }
 
 
-.calendar-cont{
+.calendar-cont {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.604);
     background-color: #3f4c77;
     margin-top: 120px;
@@ -27,19 +28,21 @@
     width: 80vw;
 
 }
- .cal{
+
+.cal {
     max-width: 450px;
     border-radius: 15px;
     color: #646abe;
     margin: 15px auto;
     width: 430px;
-    
+
 }
-.image{
+
+.image {
     background-image:
-    linear-gradient(to right, rgba(49, 67, 124, 0.651) 75.4%, rgb(63, 76, 119) 98.2%),
-    url(../Assets/personality.jpg);
-    
+        linear-gradient(to right, rgba(49, 67, 124, 0.651) 75.4%, rgb(63, 76, 119) 98.2%),
+        url(../Assets/personality.jpg);
+
     left: 0;
     top: 0;
     width: 140%;
@@ -48,33 +51,35 @@
     background-size: cover;
     background-position: center;
     flex: 1;
-   
+
 }
-.cal-parent{
+
+.cal-parent {
     padding: 15px;
     flex: 1;
 }
-#button{
+
+#button {
     margin: 5px auto;
     padding-block: 10px;
     width: 330px;
 }
-.title{
+
+.title {
     text-align: center;
     color: white;
     font-size: 22px;
     font-family: Dosis;
 }
 
-.output{
+.output {
     box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
-;
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
     margin-top: 80px;
     margin-left: 100px;
     border-radius: 7px;
@@ -91,23 +96,25 @@
     grid-template-rows: 150px 150px;
 }
 
-.output .second, .year, .month, .minute{
+.output .second, .year, .month, .minute {
     text-align: center;
     justify-content: center;
     padding: 25px;
-   
+
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 }
-.day{
+
+.day {
     padding: 17px;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
-.personality{
+
+.personality {
     text-align: justify;
     padding: 10px;
     border-radius: 10px;
@@ -115,116 +122,120 @@
     grid-column: 1/ 3;
     font-size: larger;
     line-height: 1.3;
-    
+
 }
-.personality span{
+
+.personality span {
     font-size: 35px;
 }
-.footera{
+
+.footera {
     bottom: 0;
     height: 35px;
     width: 100%;
     background-color: #3f4c77;
     margin-top: 50px;
 }
-.footera p{
-   text-align: center;
-   color: #ffffff;
-   bottom: 0;
+
+.footera p {
+    text-align: center;
+    color: #ffffff;
+    bottom: 0;
 }
 
 @media only screen and (max-width:650px) {
-    
-    
-   .calendar-cont{
-    width: 100%;
-    height: 100vh;
-    margin-inline: auto;
-    
-    
-     
-     
-   }
-   .image{
-    /* z-index: 155210; */
-    width: 100%;
-   }
-   .cal{
-    width: 250px;
-   }
-   .cal-parent{
-    flex: none;
-}
+    .calendar-cont {
+        width: 100%;
+        height: 100vh;
+        margin-inline: auto;
+    }
+
+    .image {
+        /* z-index: 155210; */
+        width: 100%;
+    }
+
+    .cal {
+        width: 250px;
+    }
+
+    .cal-parent {
+        flex: none;
+    }
 
 
-.output{
-    box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
-;
-    margin-top: 80px;
-    margin-left: 0;
-    border-radius: 7px;
-    
-    /* min-height: 0; */
-    font-size: 15px;
-    font-weight: bold;
-    width: 100%;
-    padding: 30px;
-    display: grid;
-    gap: 30px 15px;
-    grid-template-columns: auto auto ;
-    grid-template-rows: 100px 100px;
-}
+    .output {
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+        margin-top: 80px;
+        margin-left: 0;
+        border-radius: 7px;
 
-.output .second, .year, .month, .minute{
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    font-size: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        /* min-height: 0; */
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        padding: 30px;
+        display: grid;
+        gap: 30px 15px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 100px 100px;
+    }
+
+    .output .second, .year, .month, .minute {
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    }
+
+    .output h1 {
+        font-size: 17px;
+    }
+
+    .day {
+        padding: 17px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .personality {
+        text-align: justify;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        grid-column: 1/ 3;
+        font-size: larger;
+        line-height: 1.3;
+
+    }
+
+    .personality span {
+        font-size: 25px;
+    }
+
+    .footera {
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #3f4c77;
+        margin-top: 50px;
+    }
+
+    .footera p {
+        text-align: center;
+        color: #ffffff;
+        bottom: 0;
+    }
 
 }
-.output h1{
-    font-size: 17px;
-}
-.day{
-    padding: 17px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-.personality{
-    text-align: justify;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    grid-column: 1/ 3;
-    font-size: larger;
-    line-height: 1.3;
-    
-}
-.personality span{
-    font-size: 25px;
-}
-
-   .footera{
-    bottom: 0;
-    height: 35px;
-    width: 100%;
-    background-color: #3f4c77;
-    margin-top: 50px;
-}
-.footera p{
-   text-align: center;
-   color: #ffffff;
-   bottom: 0;
-}
-
-} 
