@@ -11,9 +11,7 @@ import Button from '@mui/material/Button';
 import { scroller } from 'react-scroll';
 import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 // import dayjs from 'dayjs';
-
 import './agestyle.css'
-import { Style } from '@mui/icons-material';
 // import { getValue } from '@testing-library/user-event/dist/utils';
 
 
@@ -181,7 +179,7 @@ function FrontPage() {
 
   return (
     
-    <div className='age_wrapper page_body'>
+    <div className='age_page_body page_body'>
         {/* Input field for age */}
         
 
@@ -250,7 +248,7 @@ function FrontPage() {
       </div>
       
       <div className='day'>
-        {day && <p ><h1>You were born on: </h1>{day}</p>}
+        {day && <p><h1>You were born on: </h1>{day}</p>}
       </div>
       
      

@@ -1,6 +1,5 @@
 import React from 'react'
 import Calendar from './calendar'
-
 import './agestyle.css'
 // import { getValue } from '@testing-library/user-event/dist/utils';
 function FrontPage() {
