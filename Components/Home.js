@@ -7,9 +7,6 @@ function Home() {
       
     <div className='homecontener'>
         <div className='homeage'>
-
-
-
         <div class="book">
 	<div className="book__pg-shadow"></div>
 	<div className="book__pg"></div>
@@ -30,7 +27,6 @@ function Home() {
         🛣️የመጓዝ እና የማሰስ ፍላጎት፡ <br />
         📈  በግል እድገት ላይ ያተኮረ</span>
 </div>
-
         </div>
         <div className='homeblood'>
         <span>ለ ደም ግሩፕ ኦ የሚመከሩ መገቦች </span>
@@ -47,7 +43,6 @@ function Home() {
   <div className="drop">
   </div>
 </div>
-
         </div>
         <div className='homewater'>
           <div className="displaytext">
