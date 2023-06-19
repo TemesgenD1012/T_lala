@@ -1,6 +1,3 @@
-
-
-
 :root{
     /* SIZES*/
     --header-height: 100px;
@@ -9,18 +6,49 @@
     --footer-height: 65px;
 
     /* COLORS */
-    --clr-primary: #0f415b;
+    --clr-primary: #04344c;
     --clr-secondary: rgb(88, 230, 249);
     --clr-primary-hovr: #04344cee;
+
+    /* BOX SHADOW */
+    --layered-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+
     /* OTHER VARIABLES*/
     --transition-02: all .2s ease;
     --transition-03: all .3s ease;
 }
-
-*{
+/* ##### Scrollbar CSS ##### */
+  /* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #04344c #ffffff;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px; /*For vertical*/
+    height: 10px; /*For horizontal*/
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #04344c;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+}
+
 /*
 ######## HEADER STYLES ########
 */
@@ -31,8 +59,7 @@
     height: var(--header-height);
     padding-inline: 1rem;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
-    background-color: #0094e971;
-    background-image: linear-gradient(160deg, #0094e97f 0%, #80d0c778 100%);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
@@ -67,11 +94,12 @@
 }
 .header_title .title{
     margin-inline: auto;
-    font-size: 3em;
+    text-align: center;
+    font-size: 2.5em;
     font-weight: thin;
     color: transparent;
     width: fit-content;
-    background: linear-gradient(-45deg, rgba(18, 153, 250, 0.959), rgba(5, 66, 250, 0.938));
+    background: linear-gradient(45deg, var(--clr-primary-hovr), rgba(5, 221, 250, 0.959));
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -84,7 +112,7 @@
 .sidebar{
     position: fixed;
     left: 0;
-    bottom: 0;
+    top: var(--header-height);
     width: var(--sidebar-width);
     padding: 10px 14px;
     height: calc(100vh - var(--header-height));
@@ -96,7 +124,6 @@
 }
 .sidebar.active{
     width: var(--sidebar-mini-width);
-    
 }
 .sidebar .lists{
     overflow: hidden;
@@ -151,17 +178,17 @@
 .lists .list:focus {
     background: var(--clr-secondary);
 }
-.lists .list .link:hover .icon svg,
-.lists .list .link:hover .name,
-.lists .list .link.active .icon svg,
-.lists .list .link.active .name{
+.lists .link:hover .icon svg,
+.lists .link:hover .name,
+.lists .link.active .icon svg,
+.lists .link.active .name{
     color: var(--clr-primary);
 }
 
 /*
 ######## FOOTER STYLES ########
 */
-/* 
+
 .page_footer{
     height: var(--footer-height);
     width: calc(100vw - var(--sidebar-mini-width));
@@ -175,33 +202,55 @@
     font-weight: thin;
     color: #808080;
     padding: 1rem;
-} */
+}
 
 
 /*
 ######## HOME PAGE STYLES ########
 */
 
-/*Mobile responsiveness*/
-@media only screen and (max-width:750px) {
-   
+
+
+
+/*
+######## MEDIA QUERY ########
+*/
+
+@media only screen and (max-width: 800px){
+    .header_title .title{
+        font-size: 2em;
+    }
+
+    .page_footer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .header_title .title{
+        font-size: 2em;
+    }
     .sidebar{
-       width: var(--sidebar-width)!important;
-       left: -100% !important;
-       box-shadow: 3px 2px 5px 2px rgb(53, 58, 60);
-       /* position: absolute; */
+        width: var(--sidebar-width) !important;
+        left: -100% !important;
     }
     .sidebar.active{
         left: 0 !important;
     }
-    .sidebar.active.lists .list .name{
-        color: var(--clr-secondary)!important;
-    }
-    .header_title .title{
-        font-size: 2em;
-        text-shadow: #0094e971;
-    }
     .sidebar.active .name{
-        opacity: 1!important;
+        opacity: 1 !important;
     }
 }
+
+@media only screen and (max-width: 400px){
+    .header{
+        gap: 0;
+    }
+    .header_logo{
+        margin: auto;
+    }
+    .header_title {
+        display: none;
+    }
+}
+

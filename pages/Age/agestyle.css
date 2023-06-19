@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+    font-family: Dosis;
+}
+/* body{
+    background-image: url(../Assets/wavebg.jpg);
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    
+} */
+
+
+.calendar-cont{
+    flex-wrap: wrap;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.604);
+    background-color: #3f4c77;
+    margin-top: 120px;
+    margin-left: 100px;
+    border-radius: 7px;
+    display: flex;
+    height: 82vh;
+    position: relative;
+    width: 80vw;
+
+}
+.cal{
+    max-width: 450px;
+    border-radius: 15px;
+    color: #646abe;
+    margin: 15px auto;
+    width: 430px;
+   
+    
+    
+}
+.image{
+    background-image:
+    linear-gradient(to right, rgba(49, 67, 124, 0.651) 75.4%, rgb(63, 76, 119) 98.2%),
+    url(../Assets/personality.jpg);
+    
+    left: 0;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+   
+}
+.cal-parent{
+    padding: 15px;
+    flex: 1;
+}
+#button{
+    margin: 5px auto;
+    padding-block: 10px;
+    width: 330px;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: Dosis;
+}
+
+.output{
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  
+    margin-top: 80px;
+    margin-left: 100px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    min-height: 0;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    width: 80vw;
+    padding: 30px;
+    display: grid;
+    gap: 50px 85px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px;
+}
+
+.output .second, .year, .month, .minute{
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+   
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+.day{
+    padding: 17px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.personality{
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    grid-column: 1/ 3;
+    font-size: larger;
+    line-height: 1.3;
+    
+}
+.personality span{
+    font-size: 35px;
+}
+.footera{
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    background-color: #3f4c77;
+    margin-top: 50px;
+}
+.footera p{
+   text-align: center;
+   color: #ffffff;
+   bottom: 0;
+}
+
+@media only screen and (max-width:650px) {
+   .calendar-cont{
+    width: 100vw;
+   }
+}

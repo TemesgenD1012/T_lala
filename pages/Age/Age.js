@@ -1,10 +1,14 @@
 import React from 'react'
-import '../styles.css'
+import Calendar from './calendar'
+
+import './agestyle.css'
+// import { getValue } from '@testing-library/user-event/dist/utils';
 function FrontPage() {
-  return (
-    <div className='age_wrapper page_body'>
-        <p>Age</p>
-    </div>
+  return(
+   <div className='main'>
+    <Calendar/>
+    
+   </div>
   )
 }
 

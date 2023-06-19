@@ -19,7 +19,7 @@ const findActive = (value) => {
       active = 2
     break;
     case "/About":
-      active = 2
+      active = 4
     break;
     default:
       active = 0

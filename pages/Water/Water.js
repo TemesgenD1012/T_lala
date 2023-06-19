@@ -7,7 +7,7 @@ import './style.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
-import '../styles.css'
+
 function Water() {
   useEffect(()=>{
     Aos.init({duration:1000})

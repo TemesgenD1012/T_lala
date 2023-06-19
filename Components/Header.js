@@ -4,7 +4,7 @@ import Logo from '../pages/Assets/Logo.png'
 import './style.css';
 import { useLocation } from 'react-router-dom';
 
-const findTitle = (value) => {
+export const findTitle = (value) => {
   let title = ""
   switch(value){
     case "/age": 
@@ -14,7 +14,7 @@ const findTitle = (value) => {
       title="Water Intake Calculator"
     break;
     case "/food":
-      title = "Food Intake "
+      title = "Food Recommendation "
     break;
     default:
       title = "DAFTech Tools"
@@ -39,7 +39,7 @@ function Header({toggleSidebar}) {
             <img src={Logo} alt="DAF Tools" className='logo_img'/>
           </Link>
         </div>
-        <div className='header_title'>
+        <div className='header_title '>
             <h2 className='title'>{findTitle(currentUrl)}</h2>
         </div>
     </div>

@@ -44,7 +44,6 @@ function Home() {
 <div className="drop-container">
 
   <div className="drop">
-    <div></div>
   </div>
 </div>
 

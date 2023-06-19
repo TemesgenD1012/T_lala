@@ -2,13 +2,7 @@
 * ######### STYLES SHARED BY ALL PAGES #########
 */
 
-.food_wrapper, 
-.age_wrapper, 
-.home_wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ 
 
 .page_body{
     min-height: calc(100vh - (var(--header-height) + 2px));
@@ -38,7 +32,7 @@
     display: none;
 }
 .mobile_page_title .title,
-.sub_title{
+.sub_title {
     margin: auto;
     font-weight: thin;
     font-size: 1.5em;
@@ -48,6 +42,13 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+.mobile_page_title.food{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 99;
+}
 
 /** MEDIA QUERIES **/
 @media only screen and (max-width: 600px){
@@ -55,10 +56,17 @@
         width: 100%;
         padding: 1rem;
     }
+    .page_body.food_wrapper{
+        padding: 0 !important;
+    }
+
 }
 
 @media only screen and (max-width: 400px){
     .mobile_page_title{
         display: block;
+    }
+    .mobile_page_title.food .title{
+        white-space: nowrap;
     }
 }
